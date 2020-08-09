@@ -1,4 +1,4 @@
-
+<?php
 // Eliminar el footer de StoreFront
 add_action( 'init', 'du_eliminar_footer_storefront', 10 );
 	function du_eliminar_footer_storefront() {
@@ -20,4 +20,5 @@ function du_creditos_duando() {
     echo '<div class="du-creditos-duando">';
     echo 'Sitio web implementado por <a href="https://duando.net">Duando</a>';
     echo '</div>';
-    }
+	}
+	?>
