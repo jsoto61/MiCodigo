@@ -1,4 +1,5 @@
 <?php
+
 // Eliminar el footer de StoreFront
 add_action( 'init', 'du_eliminar_footer_storefront', 10 );
 	function du_eliminar_footer_storefront() {
@@ -14,6 +15,7 @@ function du_personalizar_footer_storefront() {
 	echo ' - ' . get_bloginfo( 'description' ); 
 	echo '</div>';
 	}
+
 //Se añaden los creditos de Duando
 add_action( 'storefront_footer', 'du_creditos_duando', 10 );
 function du_creditos_duando() {
