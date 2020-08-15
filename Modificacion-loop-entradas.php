@@ -4,10 +4,10 @@
 
 /*MODIFICACIONES EN EL LOOP DE ENTRADAS*/
 
-	add_action( 'genesis_before_entry', 'cambiar_informacion_del_loop' );
+	add_action( 'genesis_before_entry', 'du_cambiar_informacion_del_loop' );
     
-    function cambiar_informacion_del_loop() {
-		if ( is_home() ) {
+    function du_cambiar_informacion_del_loop() {
+		if ( is_home() ) { //Si queremos actuar sobre todas las categorías es is_category()
 	    /* Eliminamos el título del post*/
 	    remove_action('genesis_entry_header','genesis_do_post_title');
         /*Eliminamos el contenido del post (texto)*/

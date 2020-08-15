@@ -1,3 +1,5 @@
+<?php
+
 /* AÑADE UNA BARRA CTA SOBRE EL MENÚ DE GENESIS */
 
 add_action('genesis_before_header', 'du_cabecera_sobre_menu');
@@ -6,3 +8,4 @@ add_action('genesis_before_header', 'du_cabecera_sobre_menu');
 		echo '<span> CTA - ¡Haz tu reserva!</span>';
 		echo '</div>';
 }
+?>
