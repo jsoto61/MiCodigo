@@ -14,7 +14,7 @@
 		function du_metabox_personalizado() {
 			
 			printf('<p>Si necesitas ayuda para gestionar tu WordPress ponte en contacto con Duando 
-					a través de <a href="mailto:juanjsoto@duando.net">correo electrónico</a> o 
+					a trav&eacute;s de <a href="mailto:juanjsoto@duando.net">correo electr&oacute;nico</a> o 
 					bien mediante un mensaje desde el <a href="https://duando.net/contacto">formulario 
 					de contacto</a></p>');
 			
