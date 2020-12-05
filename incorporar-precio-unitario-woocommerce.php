@@ -10,7 +10,7 @@
  *  nombre recordar cambiarlo también en la función)
  *  Mediante la clase du-precio-unitario podemos modificar el aspecto por 
  *  código CSS, por ejemplo:
- * .du-precio-unitario { font-size: .8rem; color: #aaa;}
+ *  .du-precio-unitario { font-size: .8rem; color: #aaa;}
  * 
  *******************************************************************************/
 
