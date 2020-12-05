@@ -1,3 +1,5 @@
+<?php
+
 /*******************************************************************************
  * 	
  *  RUTINA PARA AÑADIR AL PRECIO DE UN PRODUCTO DE WOOCOMMERCE UN TEXTO QUE 
@@ -17,3 +19,5 @@
 		}
 	
 	add_filter( 'woocommerce_get_price_html', 'du-filtro-woocommerce-precio', 10, 2 );
+
+?>
