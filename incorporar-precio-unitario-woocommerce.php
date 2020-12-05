@@ -9,7 +9,8 @@
  *  woocommerce denominado precio-unidad-peso-volumen (si se modifica este 
  *  nombre recordar cambiarlo también en la función)
  *  Mediante la clase du-precio-unitario podemos modificar el aspecto por 
- *  código CSS
+ *  código CSS, por ejemplo:
+ * .du-precio-unitario { font-size: .8rem; color: #aaa;}
  * 
  *******************************************************************************/
 
