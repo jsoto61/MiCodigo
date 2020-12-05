@@ -10,7 +10,7 @@
  * 
  *******************************************************************************/
 
-	function du-filtro-woocommerce-precio( $price, $instance ) { 
+	function du_filtro_woocommerce_precio( $price, $instance ) { 
 		$du_precio_unidad_peso_volumen = get_post_meta( get_the_ID(), 'precio-unidad-peso-volumen', true );
 	
 		if ($du_precio_unidad_peso_volumen) 
@@ -18,6 +18,6 @@
 		return $price; 
 		}
 	
-	add_filter( 'woocommerce_get_price_html', 'du-filtro-woocommerce-precio', 10, 2 );
+	add_filter( 'woocommerce_get_price_html', 'du_filtro_woocommerce_precio', 10, 2 );
 
 ?>
