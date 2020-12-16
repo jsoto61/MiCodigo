@@ -3,7 +3,7 @@
 Plugin Name: Duando
 Plugin URI: https://duando.net
 Description: Plugin de funcionalidades específicas de este proyecto web
-Version: 1.0
+Version: 1.1
 Author: Juan Jacinto Soto Sánchez
 Author URI: https://duando.net
 License: GPL
@@ -89,31 +89,32 @@ function encolado_estilo_personalizado() {
 add_action( 'after_setup_theme', 'du_paleta_colores_personalizada' );
 
 function du_paleta_colores_personalizada() {
+	
 	add_theme_support(
 		'editor-color-palette', array(
 			array(
-				'name'  => esc_html__( 'Color-1', 'genesis-sample' ),
-				'slug' => 'col1',
+				'name'  => esc_html__( 'Color 1', 'genesis-sample' ),
+				'slug' => 'color-1',
 				'color' => '#76AADB',
 			),
 			array(
-				'name'  => esc_html__( 'Color-2', 'genesis-sample' ),
-				'slug' => 'col2',
+				'name'  => esc_html__( 'Color 2', 'genesis-sample' ),
+				'slug' => 'color-2',
 				'color' => '#4A7282',
 			),
 			array(
-				'name'  => esc_html__( 'Color-3', 'genesis-sample' ),
-				'slug' => 'col3',
+				'name'  => esc_html__( 'Color 3', 'genesis-sample' ),
+				'slug' => 'color-3',
 				'color' => '#3D6199',
 			),
 			array(
-				'name'  => esc_html__( 'Blanco', 'genesis-sample' ),
-				'slug' => 'Blanco',
+				'name'  => esc_html__( 'Color 4', 'genesis-sample' ),
+				'slug' => 'color-4',
 				'color' => '#ffffff',
 			),
 			array(
-				'name'  => esc_html__( 'Negro', 'genesis-sample' ),
-				'slug' => 'negro',
+				'name'  => esc_html__( 'Color 5', 'genesis-sample' ),
+				'slug' => 'color-5',
 				'color' => '#000000',
 			)
 		)
