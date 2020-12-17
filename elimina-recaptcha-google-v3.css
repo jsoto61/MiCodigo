@@ -1,0 +1,7 @@
+/*
+    El badge de Google no se puede eliminar una vez instalado,
+    como alternativa se puede ocultar añadiendo la siguiente línea de 
+    CSS
+*/
+
+.grecaptcha-badge { visibility: hidden; }
