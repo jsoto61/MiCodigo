@@ -3,7 +3,7 @@
 Plugin Name: Duando
 Plugin URI: https://duando.net
 Description: Plugin de funcionalidades específicas de este proyecto web
-Version: 1.1
+Version: 1.2
 Author: Juan Jacinto Soto Sánchez
 Author URI: https://duando.net
 License: GPL
@@ -126,6 +126,4 @@ function du_paleta_colores_personalizada() {
 *  editor de archivos
 *
 *   /*Inhabilita la posibilidad de editar archivos (plugins y themes) desde el panel de admin */
-*	define( 'DISALLOW_FILE_EDIT', true );
-*
-*/
+*	/*define( 'DISALLOW_FILE_EDIT', true );*/
