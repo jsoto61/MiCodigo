@@ -125,6 +125,7 @@ function du_paleta_colores_personalizada() {
 *  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
 *  editor de archivos
 *
+*   /*Inhabilita la posibilidad de editar archivos (plugins y themes) desde el panel de admin */
 *	define( 'DISALLOW_FILE_EDIT', true );
 *
 */
