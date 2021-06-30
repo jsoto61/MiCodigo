@@ -2,9 +2,9 @@
 /*
 Plugin Name: Duando
 Plugin URI: https://duando.net
-Description: Plugin de funcionalidades específicas de este proyecto web
-Version: 1.2
-Author: Juan Jacinto Soto Sánchez
+Description: Plugin de funcionalidades espec&iacute;ficas de este proyecto web
+Version: 1.3
+Author: Juan Jacinto Soto S&aacute;nchez
 Author URI: https://duando.net
 License: GPL
 License URI: 
@@ -121,9 +121,7 @@ function du_paleta_colores_personalizada() {
 	);
 }
 
-/* 
-*  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
-*  editor de archivos
-*
-*   /*Inhabilita la posibilidad de editar archivos (plugins y themes) desde el panel de admin */
-*	/*define( 'DISALLOW_FILE_EDIT', true );*/
+
+//  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
+//  editor de archivos. Inhabilita la posibilidad de editar archivos (plugins y themes) desde el panel de admin */
+//  define( 'DISALLOW_FILE_EDIT', true );
