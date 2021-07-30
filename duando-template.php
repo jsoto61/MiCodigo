@@ -3,7 +3,7 @@
 Plugin Name: Duando
 Plugin URI: https://duando.net
 Description: Plugin de funcionalidades espec&iacute;ficas de este proyecto web
-Version: 1.3
+Version: 1.4
 Author: Juan Jacinto Soto S&aacute;nchez
 Author URI: https://duando.net
 License: GPL
@@ -31,6 +31,8 @@ License URI:
 					a trav&eacute;s de <a href="mailto:juanjsoto@duando.net">correo electr&oacute;nico</a> o 
 					bien mediante un mensaje desde el <a href="https://duando.net/contacto">formulario 
 					de contacto</a></p>');
+			printf('<p>Acceso al <a href="/wp-admin/edit.php?post_type=wp_block"
+					editor de bloques reutilizables:</a></p>');
 			
 		}
 	}
@@ -85,7 +87,7 @@ function encolado_estilo_personalizado() {
 /*
     AÑADE PALETA PERSONALIZADA EN EL EDITOR
  */
-
+/*
 add_action( 'after_setup_theme', 'du_paleta_colores_personalizada' );
 
 function du_paleta_colores_personalizada() {
@@ -120,7 +122,7 @@ function du_paleta_colores_personalizada() {
 		)
 	);
 }
-
+*/
 
 //  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
 //  editor de archivos. Inhabilita la posibilidad de editar archivos (plugins y themes) desde el panel de admin */
