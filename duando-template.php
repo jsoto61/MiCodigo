@@ -3,7 +3,7 @@
 Plugin Name: Duando
 Plugin URI: https://duando.net
 Description: Plugin de funcionalidades espec&iacute;ficas de este proyecto web
-Version: 1.5
+Version: 1.7
 Author: Juan Jacinto Soto S&aacute;nchez
 Author URI: https://duando.net
 License: GPL
@@ -27,16 +27,17 @@ License URI:
 		// Añadir el contenido al widget
 		function du_metabox_personalizado() {
 			
-			printf('<p>Si necesitas ayuda para gestionar tu WordPress ponte en contacto con Duando 
+			printf('<p>1. Si necesitas ayuda para gestionar tu WordPress ponte en contacto con Duando 
 					a trav&eacute;s de <a href="mailto:juanjsoto@duando.net">correo electr&oacute;nico</a> o 
 					bien mediante un mensaje desde el <a href="https://duando.net/contacto">formulario 
-					de contacto</a></p>');
-			printf('<p>Acceso al <a href="/wp-admin/edit.php?post_type=wp_block"
-					editor de bloques reutilizables:</a></p>');
+					de contacto</a></p><hr>');
+			printf('<p>2. Acceso al <a href="/wp-admin/edit.php?post_type=wp_block">
+					Editor de bloques reutilizables</a></p>');
+			printf('<p>2. Abrir un <a href="https://miduando.com/public/ticket/create_ticket.php">
+					TICKET</a> de soporte</p>');
 			
 		}
 	}
-
 
 /*
     INSERTA UN AVISO DE SITIO NO INDEXADO EN LA BARRA DE HERRAMIENTAS
@@ -82,6 +83,9 @@ function encolado_estilo_personalizado() {
 					  wp_get_theme()->get('Version')
 					);
 }
+
+// * Habilita el editor de widgets basado en bloques en Genesis FrameWork
+add_filter ( 'use_widgets_block_editor' , '__return_true' );
 
 
 //  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
