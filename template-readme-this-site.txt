@@ -18,5 +18,3 @@ encolado de la hoja de estilos mencionada en el punto anterior.
 
 d) Los colores de base de este proyecto son:
    * 
-   *
-   
