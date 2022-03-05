@@ -3,7 +3,7 @@
 Plugin Name: Duando
 Plugin URI: https://duando.net
 Description: Plugin de funcionalidades espec&iacute;ficas de este proyecto web
-Version: 1.7
+Version: 1.10
 Author: Juan Jacinto Soto S&aacute;nchez
 Author URI: https://duando.net
 License: GPL
@@ -31,10 +31,12 @@ License URI:
 					a trav&eacute;s de <a href="mailto:juanjsoto@duando.net">correo electr&oacute;nico</a> o 
 					bien mediante un mensaje desde el <a href="https://duando.net/contacto">formulario 
 					de contacto</a></p><hr>');
-			printf('<p>2. Acceso al <a href="/wp-admin/edit.php?post_type=wp_block">
-					Editor de bloques reutilizables</a></p>');
 			printf('<p>2. Abrir un <a href="https://miduando.com/public/ticket/create_ticket.php">
 					TICKET</a> de soporte</p>');
+			printf('<p>2. Documentaci&oacute;n sobre la personalizaci&oacute;n de <a href="/wp-content/uploads/duando/readme-this-site.txt">
+
+					este sitio web</a></p>');
+		
 			
 		}
 	}
@@ -46,6 +48,8 @@ License URI:
 
 add_action('admin_bar_menu', 'du_site_indexation_warning', 999);
 function du_site_indexation_warning($bar) {
+	$icon = '';
+	$icon_color ='';
 	if (get_option('blog_public') == 0) {
 		$icon = '"\f530"';
 		$icon_color = 'red';
@@ -86,6 +90,9 @@ function encolado_estilo_personalizado() {
 
 // * Habilita el editor de widgets basado en bloques en Genesis FrameWork
 add_filter ( 'use_widgets_block_editor' , '__return_true' );
+
+/* Quitar selector de idioma de pantalla de acceso */ 
+add_filter( 'login_display_language_dropdown', '__return_false' );
 
 
 //  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
