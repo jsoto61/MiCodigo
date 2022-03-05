@@ -93,8 +93,3 @@ add_filter ( 'use_widgets_block_editor' , '__return_true' );
 
 /* Quitar selector de idioma de pantalla de acceso */ 
 add_filter( 'login_display_language_dropdown', '__return_false' );
-
-
-//  colocar esta línea al final del archivo wp-config.php para inhabilitar el 
-//  editor de archivos. Inhabilita la posibilidad de editar archivos (plugins y themes) desde el panel de admin */
-//  define( 'DISALLOW_FILE_EDIT', true );
